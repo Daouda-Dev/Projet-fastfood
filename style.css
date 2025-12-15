@@ -6,13 +6,18 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
+    padding-top: 80px;
     background-color: rgb(194, 196, 199);
+}
+html, body{
+    max-width: 100px;
+    overflow-x: hidden;
 }
 /* Header================================================================================================ */
 header {
     background: radial-gradient(purple,white);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 100;
     
