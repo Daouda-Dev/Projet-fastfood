@@ -10,7 +10,7 @@ body{
     background-color: rgb(194, 196, 199);
 }
 html, body{
-    max-width: 100px;
+    max-width: 100%;
     overflow-x: hidden;
 }
 /* Header================================================================================================ */
