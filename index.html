@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous/">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="hamburger"> 
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            
+                <div class="logo-kida">
+        <i class="fa-solid fa-burger"></i>
+            <span>FASTFOOD</span>
+    </div>
+            
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+        
+        <div class="cart-dropdown">
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                Montant total: <span>0</span> FCFA
+            </div>
+            <!-- Ajoutez ceci dans le cart-dropdown (avant le bouton Commander) -->
+<div class="customer-info">
+    <h3>Information du client</h3>
+    <input type="text" id="customer-name" placeholder="Votre nom et prenom" required>
+    <input type="text" id="customer-address" placeholder="Votre adresse complète" required>
+    <textarea id="customer-notes" placeholder="Notes supplémentaires (optionnel)"></textarea>
+</div>
+            <button class="checkout-btn">Passer la commande</button>
+            
+        </div>
+    </header><br><br>
+    
+    
+            <div class="row">
+                <div class="col-2">
+            <h1> <img src="Images/b-removebg-preview.png" alt="" width="90px" height="60px" >Bienvenue!!<br>
+                Chez <em>FAST_FOOD_G1</em>
+            </h1>
+            <p>
+                <img src="Images/burger-removebg-preview.png" alt="" width="90px" height="60px" >
+                Savourez leMeilleur du Fast-Food, à Tout Moment!!
+                
+                <br>
+Des bugers gourmands, des menus frais et une livraison rapide <strong><em> Commandez, dégustez...profitez!</em></strong>
+            </p>
+            </div>
+            <div class="col-1">
+            <img src="Images/burg-removebg-preview.png" alt="" >
+            </div>
+            </div>
+
+            <section id="products" class="products" style="background:radial-gradient(black,white);">
+               <br><h2>Voir Menu<br>Nos Burger<img src="Images/BU0-removebg-preview.png" alt="" width="90px" height="60px"></h2><br>
+            <div class="product-grid">
+                <!-- Produit 1 modifié -->
+                <div class="product-card" data-id="1" data-price="3500">
+                    <img src="Images/BU1-removebg-preview.png" alt="iPhone 14 Pro" class="product-img" id="product-1-img">
+                    <div class="product-info">
+                        <h3>Classic Burger</h3>
+                        <h6>Un burger simple et délicieux composé d'un steak de boeuf juteux, de frommage fondant, de salade fraîche et d'une sauce de maison</h6>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        
+                       
+                        
+                        <p class="price">3500 FCFA</p>
+                        <button class="add-to-cart">Ajouter</button>
+                    </div>
+                </div>
+
+                <!-- Produit 2 modifié -->
+                <div class="product-card" data-id="2" data-price="4000">
+                    <img src="Images/BU2-removebg-preview.png" alt="iPhone 14 Pro Max" class="product-img" id="product-2-img">
+                    <div class="product-info">
+                        <h3>Cheese Burger</h3>
+                        <h6>Un burger gourmand avec un steak bien grillé, une généreuse tranche de fromage fondant et une sauce crémeuse.</h6>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        
+                       
+                        
+                        <p class="price">4000 FCFA</p>
+                        <button class="add-to-cart">Ajouter</button>
+                    </div>
+                </div>
+                 <!-- Produit 3 modifié -->
+                <div class="product-card" data-id="3" data-price="4500">
+                    <img src="Images/BU3-removebg-preview.png" alt="iPhone 14 Pro" class="product-img" id="product-1-img">
+                    <div class="product-info">
+                        <h3>Chicken Burger</h3>
+                        <h6>Préparé avec un filet de poulet croustillant, de la salade croquante et une sauce spéciale légèrement épicée.</h6>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        
+                       
+                        
+                        <p class="price">4500 FCFA</p>
+                        <button class="add-to-cart">Ajouter</button>
+                    </div>
+                </div>
+                 <!-- Produit 4 modifié -->
+                <div class="product-card" data-id="4" data-price="5000">
+                    <img src="Images/BU4-removebg-preview.png" alt="iPhone 14 Pro" class="product-img" id="product-1-img">
+                    <div class="product-info">
+                        <h3>Double Burger</h3>
+                        <h6>Deux steaks savoureux, double fromage, salade fraîche et sauce maison pour un maximum de plaisir.</h6>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        
+                       
+                        
+                        <p class="price">5000 FCFA</p>
+                        <button class="add-to-cart">Ajouter</button>
+                    </div>
+                </div>
+                </div>
+                
+        </section>
+        <div><p  style="border: rgb(231, 106, 106) solid 2px; text-align: center;"><em>Tous nos burgers sont préparés avec des ingrédients frais et de qualité.</em></p></div>
+
+<section id="products" class="products" style="background:radial-gradient(black,white);">
+               <br><h2>Nos Accompagnements<img src="Images/F0-removebg-preview.png" alt="" width="90px" height="60px"></h2><br>
+            <div class="product-grid">
+                <!-- Produit 1 modifié -->
+                <div class="product-card" data-id="1" data-price="1500">
+                    <img src="Images/F1-removebg-preview.png" alt="iPhone 14 Pro" class="product-img" id="product-1-img">
+                    <div class="product-info">
+                        <h3>Frites Classiques</h3>
+                        <h6>Des frites dorées et croustillantes à l’extérieur, moelleuses à l’intérieur.</h6>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        
+                       
+                        
+                        <p class="price">1500 FCFA</p>
+                        <button class="add-to-cart">Ajouter</button>
+                    </div>
+                </div>
+
+                <!-- Produit 2 modifié -->
+                <div class="product-card" data-id="2" data-price="1800">
+                    <img src="Images/F2-removebg-preview.png" alt="iPhone 14 Pro Max" class="product-img" id="product-2-img">
+                    <div class="product-info">
+                        <h3>Frites Epicées</h3>
+                        <h6>Frites croustillantes assaisonnées avec des épices spéciales maison.</h6>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        
+                       
+                        
+                        <p class="price">1800 FCFA</p>
+                        <button class="add-to-cart">Ajouter</button>
+                    </div>
+                </div>
+                 <!-- Produit 3 modifié -->
+                <div class="product-card" data-id="3" data-price="2000">
+                    <img src="Images/F3-removebg-preview.png" alt="iPhone 14 Pro" class="product-img" id="product-1-img">
+                    <div class="product-info">
+                        <h3>Frites Fromagère</h3>
+                        <h6>Frites chaudes nappées de fromage fondant et savoureux.</h6>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        
+                       
+                        
+                        <p class="price">2000 FCFA</p>
+                        <button class="add-to-cart">Ajouter</button>
+                    </div>
+                </div>
+                 <!-- Produit 4 modifié -->
+                <div class="product-card" data-id="4" data-price="2500">
+                    <img src="Images/F4-removebg-preview.png" alt="iPhone 14 Pro" class="product-img" id="product-1-img">
+                    <div class="product-info">
+                        <h3>Nuggets de boulet 6pc</h3>
+                        <h6>Morceaux de poulet panés, croustillants et juteux.</h6>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        
+                       
+                        
+                        <p class="price">2500 FCFA</p>
+                        <button class="add-to-cart">Ajouter</button>
+                    </div>
+                </div>
+                </div>
+                
+        </section>
+        <div><p  style="border: rgb(231, 106, 106) solid 2px; text-align: center;"><em>Tous nos accompagnements sont préparés avec des ingrédients frais et de qualité.</em></p></div>
+
+        <section id="products" class="products" style="background:radial-gradient(rgb(190, 227, 241),rgb(118, 117, 117));">
+               <br><h2>Suppléments Boissons <img src="Images/B0-removebg-preview.png" alt="" width="90px" height="60px">
+               </h2><br>
+            <div class="product-grid">
+                <!-- Produit 1 modifié -->
+                <div class="product-card" data-id="1" data-price="1500">
+                    <img src="Images/B1-removebg-preview.png" alt="iPhone 14 Pro" class="product-img" id="product-1-img">
+                    <div class="product-info">
+                        <h3>Coca-Cola</h3>
+                        <h6>Une boisson gazeuse fraîche et pétillante, parfaite pour accompagner tous nos burgers.</h6>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        
+                       
+                        
+                        <p class="price">1500 FCFA</p>
+                        <button class="add-to-cart">Ajouter</button>
+                    </div>
+                </div>
+
+                <!-- Produit 2 modifié -->
+                <div class="product-card" data-id="2" data-price="1500">
+                    <img src="Images/B2-removebg-preview.png" alt="iPhone 14 Pro Max" class="product-img" id="product-2-img">
+                    <div class="product-info">
+                        <h3>Fanta</h3>
+                        <h6>Boisson gazeuse fruitée et rafraîchissante, idéale pour une pause gourmande.</h6>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        
+                       
+                        
+                        <p class="price">1500 FCFA</p>
+                        <button class="add-to-cart">Ajouter</button>
+                    </div>
+                </div>
+                 <!-- Produit 3 modifié -->
+                <div class="product-card" data-id="3" data-price="1500">
+                    <img src="Images/B3-removebg-preview.png" alt="iPhone 14 Pro" class="product-img" id="product-1-img">
+                    <div class="product-info">
+                        <h3>Sprite</h3>
+                        <h6>Une boisson légère, citronnée et très désaltérante.</h6>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        
+                       
+                        
+                        <p class="price">1500 FCFA</p>
+                        <button class="add-to-cart">Ajouter</button>
+                    </div>
+                </div>
+                 <!-- Produit 4 modifié -->
+                <div class="product-card" data-id="4" data-price="2000">
+                    <img src="Images/B4-removebg-preview.png" alt="iPhone 14 Pro" class="product-img" id="product-1-img">
+                    <div class="product-info">
+                        <h3>Jus Naturel</h3>
+                        <h6>Un jus frais et naturel, préparé pour apporter énergie et fraîcheur.</h6>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        
+                       
+                        
+                        <p class="price">2000 FCFA</p>
+                        <button class="add-to-cart">Ajouter</button>
+                    </div>
+                </div>
+                </div>
+        </section>
+        <div><p  style="border: rgb(231, 106, 106) solid 2px; text-align: center;"><em>Boissons bien fraîches disponibles à tout moment.</em></p></div>
+        
+        <div style="background:radial-gradient(rgb(249, 249, 248),rgb(181, 180, 180));height: 200px;;
+    text-align: center;">
+            <img src="Images/mons-removebg-preview.png" alt="" width="300px" height="200px">
+</div>
+         
+    
+<footer>
+        
+        
+        <h4>Copyrigtht©2025.Tous droits réservés</h4>
+     </footer>
+    <script src="main.js"></script>
+</body>
+</html>
