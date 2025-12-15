@@ -317,7 +317,7 @@ h2 {
     }
 
     .product-card {
-        min-width: 260px; /* largeur fixe */
+        min-width: 100%; /* largeur fixe */
         scroll-snap-align: start;
         flex-shrink: 0;
     }
