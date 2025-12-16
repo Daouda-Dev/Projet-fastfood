@@ -309,6 +309,27 @@ h2 {
 
     .product-grid {
         display: flex;
+        
+        gap: 15px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 10px;
+    }
+
+    .product-card {
+        min-width: 260px; /* largeur fixe */
+        scroll-snap-align: start;
+        flex-shrink: 0;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+}
+@media (max-width: 500px) {
+
+    .product-grid {
+        display: flex;
         flex-direction: column;
         gap: 15px;
         overflow-x: auto;
