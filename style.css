@@ -343,15 +343,17 @@ h2 {
 
 
     .product-card {
-        min-width: 100px; /* largeur fixe */
+        min-width: 100%; /* largeur fixe */
+        min-height: 100%;
         scroll-snap-align: start;
         flex-shrink: 0;
-        width: 200px;
+        width: 100px;
 
     }
 
     .product-card img {
-        height: 180px;
+        height: 80px;
+        
     }
 }
   
